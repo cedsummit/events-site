@@ -1,7 +1,6 @@
 todo
 
 - research css grid frameworks
-- install grunt
-- install plugins
-- set up tasks for compiling sass and linting
 - set up server for testing
+
+- set options for lint
