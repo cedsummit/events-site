@@ -48,3 +48,17 @@ header{
 .grid-container{
   @include outer-container;
 }
+
+.speaker{
+  @include span-columns(4);
+  @include omega(4n);
+  text-align: center;
+}
+
+.speaker img{
+  border-radius:50%;
+}
+
+.half{
+  @include span-columns(6);
+}

@@ -49,3 +49,27 @@ header {
     display: table; }
   .grid-container:after {
     clear: both; }
+
+.speaker {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center; }
+  .speaker:last-child {
+    margin-right: 0; }
+  .speaker:nth-child(4n) {
+    margin-right: 0; }
+  .speaker:nth-child(4n+1) {
+    clear: left; }
+
+.speaker img {
+  border-radius: 50%; }
+
+.half {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .half:last-child {
+    margin-right: 0; }
