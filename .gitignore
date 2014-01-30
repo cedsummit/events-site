@@ -4,3 +4,4 @@ npm-debug.log
 components/
 bourbon/
 neat/
+.DS_Store
