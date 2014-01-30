@@ -8,3 +8,43 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header{
+  background-color: #fff;
+}
+
+.content-module{
+  width:100%;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button{
+  padding:10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.menu{
+  display:none;
+}
+
+.main-nav{
+  float:right;
+}
+
+.brand-png{
+  width: 100%;
+  height: auto;
+}
+
+.grid-container{
+  @include outer-container;
+}
