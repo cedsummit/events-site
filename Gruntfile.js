@@ -14,7 +14,12 @@ module.exports = function (grunt) {
         }
     },
 
-    watch:{},
+    watch:{
+      stylesheets: {
+        files: ['src/css/**/*.scss'],
+        tasks:['sass']
+      }
+    }
 
   });
 
@@ -24,4 +29,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['sass', 'jshint']);
+  grunt.registerTask('dev', ['watch']);
 };
