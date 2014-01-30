@@ -2,12 +2,11 @@
 
 ## Installation
 
-clone
+Run:
+`$ git clone https://github.com/xovered/events-site.git`
 
-npm install
+Then:
+`$ npm install`
 
-bower install
-
-bourbon
-
-neat
+Then:
+`$ bower install`
