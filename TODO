@@ -1,6 +1,16 @@
-todo
+Todo:
 
-- research css grid frameworks
+Milestone:
+- Static page with all information and styles
+
+Current:
+- define all modules
+- define sitewide styles
+
+Tests:
+- try full video background
+- video unblur on scroll
+
+Engineering tasks:
 - set up server for testing
-
 - set options for lint
