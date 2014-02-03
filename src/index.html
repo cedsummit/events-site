@@ -144,5 +144,13 @@
     </div>
   </section>
 
+  <script src="components/jquery/jquery.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    var winHeight = $(window).height();
+    $('#about').css('height', winHeight + 'px');
+  });
+  </script>
+
 </body>
 </html>

@@ -1,6 +1,9 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+section{
+  box-sizing: border-box;
+}
 
 #bgvid {
   position: fixed; right: 0; bottom: 0;

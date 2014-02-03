@@ -8,10 +8,10 @@ Current:
 - define sitewide styles
 
 Tests:
-- try full video background
 - video unblur on scroll
 
 Engineering tasks:
 - set up server for testing
 - set options for lint
 - install bigvideo plugin
+- refactor sass into modules
