@@ -1,79 +1,20 @@
+// Framework
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-section{
-  box-sizing: border-box;
-}
-
-#bgvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
-}
+//Partials
+@import "partials/base";
+@import "partials/header";
+@import "partials/buttons";
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   -webkit-font-smoothing: antialiased;
-}
-
-header{
-  background-color: #fff;
-}
-
-.huge{
-  text-align: center;
-  font-size: 4.5em;
-  color: #000;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-
-.content-module{
-  width:100%;
-  background-color: #fff;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.button{
-  padding:10px 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-}
-
-.menu{
-  display:none;
-}
-
-.main-nav{
-  float:right;
-}
-
-.brand-png{
-  width: 100%;
-  height: auto;
+  box-sizing: border-box;
+  background-color: rgb(214,153,43);
 }
 
 .grid-container{
   @include outer-container;
 }
 
-.speaker{
-  @include span-columns(4);
-  @include omega(4n);
-  text-align: center;
-}
-
-.speaker img{
-  border-radius:50%;
-}
-
-.half{
-  @include span-columns(6);
-}

@@ -1,0 +1,16 @@
+header{
+  border-bottom: 1px solid #fff;
+}
+
+.brand{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include span-columns(9);
+}
+
+nav{
+  float: right;
+  padding-top: 30px;
+  @include span-columns(3);
+  text-align: right;
+}
