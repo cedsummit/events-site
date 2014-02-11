@@ -36,11 +36,13 @@
             <h3 class="module-header">Conference</h3>
             <h4><time datetime="2014-06-05">Thursday 5th June</time></h4>
             <p>A day full of talks by renowned international, speakers held in the royal society. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.</p>
+            <h4 class="price">£300</h4>
           </div>
           <div class="module-col">
             <h3 class="module-header">Hackathon</h3>
             <h4><time datetime="2014-06-06">Friday 6th June</time> - <time datetime="2014-06-08">Sunday 8th June</time></h4>
             <p>A day full of talks by renowned international, speakers held in the royal society. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.</p>
+            <h4 class="price">£30</h4>
           </div>
         </div>
       </div>
@@ -72,30 +74,47 @@
 
   <section id="sponsors" class="content-module">
     <div class="grid-container">
-      <h1>Sponsors</h1>
-      <ul>
-        <li>sponsor logo one</li>
-        <li>sponsor logo two</li>
-        <li>sponsor logo three</li>
-        <li>sponsor logo four</li>
-        <li>sponsor logo five</li>
-      </ul>
-    </div>
-  </section>
+      <div class="sponsor-container">
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+      </div>
 
-  <section id="social-media" class="content-module">
-    <div class="grid-container">
-      <h1>News/Updates</h1>
-      <h3>twitter feed</h3>
-    </div>
-  </section>
-
-  <section id="contact" class="content-module">
-    <div class="grid-container">
-      <h1>Contact</h1>
+      <div class="sponsor-container">
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+      </div>
     </div>
   </section>
 
   <script src="components/jquery/jquery.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    var wHeight = $(window).height(),
+        hHeight = $('header').height(),
+        aboutHeight = wHeight - hHeight;
+
+    $('#about').css('height', aboutHeight + 'px');
+  });
+  </script>
 </body>
 </html>

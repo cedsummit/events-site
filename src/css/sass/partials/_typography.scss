@@ -1,12 +1,20 @@
 .headline{
   font-size: 4.0em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $alt-font-family;
   font-weight: 700;
   color: #fff;
 }
 
 .module-header{
-  text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.25em;
   font-weight: 700;
+  color: $secondary-color;
+  font-family: $alt-font-family;
+}
+
+.price{
+  font-family: $alt-font-family;
+  font-weight: normal;
+  font-size: 3.0em;
+  color: $light-color;
 }
