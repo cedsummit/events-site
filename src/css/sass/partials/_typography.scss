@@ -18,3 +18,17 @@
   font-size: 3.0em;
   color: $light-color;
 }
+
+
+.speaker-name{
+  margin: 0;
+  font-family: $alt-font-family;
+}
+.speaker-desc{
+  margin: 0;
+}
+.speaker-twitter{
+  margin: 0;
+  color: $secondary-color;
+  font-weight: 600;
+}

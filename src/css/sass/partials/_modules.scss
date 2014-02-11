@@ -43,3 +43,24 @@
 .sponsor img {
   width: 50%;
 }
+
+.speaker-img, .challange-img{
+  display: block;
+  float: left;
+  @include span-columns(4);
+}
+
+.speaker-info, .challange-info{
+  padding-top: 15px;
+  @include shift(1);
+  @include span-columns(7);
+}
+
+.challange-info{
+  padding-top: 0;
+}
+
+.lead-about{
+  position: absolute;
+  bottom: 0;
+}

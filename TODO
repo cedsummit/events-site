@@ -4,14 +4,9 @@ Milestone:
 - Static page with all information and styles
 
 Current:
-- define all modules
 - define sitewide styles
-
-Tests:
-- video unblur on scroll
+- refactor redundant styles
 
 Engineering tasks:
 - set up server for testing
 - set options for lint
-- install bigvideo plugin
-- refactor sass into modules

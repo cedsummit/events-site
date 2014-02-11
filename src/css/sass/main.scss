@@ -10,11 +10,18 @@
 @import "partials/typography";
 @import "partials/modules";
 
+html {
+  background: url(../../img/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: $secondary-color;
   color: $primary-color;
   font-size: 16px;
 }
