@@ -1,11 +1,14 @@
 // Framework
 @import "bourbon/bourbon";
+@import "partials/grid-settings";
 @import "neat/neat";
 
 //Partials
 @import "partials/base";
 @import "partials/header";
 @import "partials/buttons";
+@import "partials/typography";
+@import "partials/modules";
 
 body{
   font-family: $font-family;

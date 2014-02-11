@@ -1,0 +1,25 @@
+.content-module{
+  background-color: #fff;
+  border-bottom: 1px solid $border-color;
+}
+
+.module-row{
+  @include span-columns(12);
+}
+
+.module-col:nth-of-type(1){
+  @include span-columns(5);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.module-col:nth-of-type(2){
+  @include span-columns(6);
+  @include shift(1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-left: 1px solid $border-color;
+  padding-left:$column + $gutter;
+}
+
+
