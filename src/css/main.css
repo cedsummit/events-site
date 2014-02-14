@@ -3,9 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-header {
-  border-bottom: 1px solid #fff; }
-
 .brand {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -60,17 +57,23 @@ nav {
   font-size: 3.0em;
   color: #b3b3b3; }
 
-.speaker-name {
-  margin: 0;
+.speaker-title {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
   font-family: "Montserrat", sans-serif; }
 
-.speaker-desc {
+.desc {
   margin: 0; }
 
 .speaker-twitter {
   margin: 0;
   color: #d6992b;
   font-weight: 600; }
+
+.label {
+  color: #A29F9F;
+  font-weight: 400; }
 
 .content-module {
   background-color: #fff;
@@ -89,12 +92,12 @@ nav {
   float: left;
   margin-right: 2.35765%;
   width: 40.29137%;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 50px; }
   .module-col:nth-of-type(1):last-child {
     margin-right: 0; }
 
 .module-col:nth-of-type(2) {
+  position: relative;
   display: block;
   float: left;
   margin-right: 2.35765%;
@@ -148,14 +151,21 @@ nav {
   .speaker-img:last-child, .challange-img:last-child {
     margin-right: 0; }
 
-.speaker-info, .challange-info {
-  padding-top: 15px;
+.speaker-info {
   margin-left: 8.5298%;
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 57.35098%; }
-  .speaker-info:last-child, .challange-info:last-child {
+  .speaker-info:last-child {
+    margin-right: 0; }
+
+.challange-info {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .challange-info:last-child {
     margin-right: 0; }
 
 .challange-info {

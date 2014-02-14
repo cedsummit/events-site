@@ -19,12 +19,15 @@
   color: $light-color;
 }
 
-
-.speaker-name{
-  margin: 0;
+.speaker-title {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
   font-family: $alt-font-family;
 }
-.speaker-desc{
+
+
+.desc{
   margin: 0;
 }
 .speaker-twitter{
@@ -32,3 +35,9 @@
   color: $secondary-color;
   font-weight: 600;
 }
+
+.label{
+  color: #A29F9F;
+  font-weight: 400;
+}
+
