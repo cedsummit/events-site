@@ -300,6 +300,23 @@ nav {
   .blog-button-bar:last-child {
     margin-right: 0; }
 
+footer {
+  background-color: #202527;
+  color: #fff; }
+
+.footer-col {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .footer-col:last-child {
+    margin-right: 0; }
+
+.footer-col:first-of-type {
+  margin-left: 25.58941%; }
+
 html {
   background: url(../../img/background.png) no-repeat center center fixed;
   -webkit-background-size: cover;

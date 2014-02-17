@@ -1,0 +1,14 @@
+footer{
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.footer-col{
+  @include span-columns(3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-col:first-of-type{
+  @include shift(3);
+}
