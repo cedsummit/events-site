@@ -43,6 +43,22 @@ nav {
   background-color: #fff;
   color: #000; }
 
+.button-dark {
+  font-weight: 600;
+  padding: 10px 5%;
+  background: none;
+  color: #202527;
+  border: 3px solid #202527;
+  outline: none; }
+
+.button-dark:hover {
+  font-weight: 600;
+  padding: 10px 5%;
+  background: #202527;
+  color: #fff;
+  border: 3px solid #202527;
+  outline: none; }
+
 .headline {
   font-size: 4.0em;
   font-family: "Montserrat", sans-serif;
@@ -210,7 +226,7 @@ nav {
 
 .email:focus {
   outline: none;
-  border: 5px solid #414e51; }
+  border: 5px solid #354143; }
 
 .submit-button {
   background-color: #2a3335;
@@ -221,6 +237,68 @@ nav {
   background-color: #202527;
   border: 5px solid #2a3335;
   color: #fff; }
+
+#blog {
+  background-color: #fff; }
+
+.blog-header {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.0em;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.blog-title {
+  padding: 0;
+  margin: 0; }
+
+.blog-link {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .blog-link:last-child {
+    margin-right: 0; }
+
+.push-three {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-left: 25.58941%; }
+  .push-three:last-child {
+    margin-right: 0; }
+
+.bar {
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.bar:first-of-type {
+  border-top: 1px solid #e0e0e0; }
+
+.bar:hover {
+  background-color: #e0e0e0; }
+
+.post-date {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .post-date:last-child {
+    margin-right: 0; }
+
+.blog-button-bar {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 25.58941%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .blog-button-bar:last-child {
+    margin-right: 0; }
 
 html {
   background: url(../../img/background.png) no-repeat center center fixed;
