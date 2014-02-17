@@ -4,6 +4,11 @@
   background:none;
   color: #fff;
   border: 2px solid #fff;
+  outline:none;
+}
+
+.button:focus{
+  outline:none;
 }
 
 .button:hover{

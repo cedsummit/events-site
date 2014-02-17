@@ -33,7 +33,11 @@ nav {
   padding: 10px 5%;
   background: none;
   color: #fff;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  outline: none; }
+
+.button:focus {
+  outline: none; }
 
 .button:hover {
   background-color: #fff;
@@ -174,6 +178,49 @@ nav {
 .lead-about {
   position: absolute;
   bottom: 0; }
+
+#mailer {
+  background-color: #202527;
+  color: #fff; }
+
+.mailer-container {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-left: 25.58941%;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .mailer-container:last-child {
+    margin-right: 0; }
+
+.mailer-message {
+  font-size: 2.0em; }
+
+.mailer-form {
+  margin-top: 50px; }
+
+.email {
+  width: 60%;
+  float: left;
+  padding: 10px 5%;
+  background-color: #202527;
+  border: 5px solid #2a3335;
+  border-right: none; }
+
+.email:focus {
+  outline: none;
+  border: 5px solid #414e51; }
+
+.submit-button {
+  background-color: #2a3335;
+  border: 5px solid #2a3335;
+  color: #fff; }
+
+.submit-button:hover {
+  background-color: #202527;
+  border: 5px solid #2a3335;
+  color: #fff; }
 
 html {
   background: url(../../img/background.png) no-repeat center center fixed;
