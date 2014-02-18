@@ -22,65 +22,8 @@
   padding-left:$column + $gutter;
 }
 
-
-#sponsors{
-  background-color: #eee;
-}
-
-.sponsor{
-  @include span-columns(3);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-right: 1px solid $border-color;
-  text-align: center;
-}
-
-.sponsor-container{
-  border-bottom: 1px solid $border-color;
-  @include outer-container;
-}
-
-.sponsor:nth-of-type(4n){
-  @include omega;
-  border-right: none;
-}
-
-.sponsor img {
-  width: 50%;
-}
-
-.speaker-img, .challange-img{
-  display: block;
-  float: left;
-  @include span-columns(4);
-}
-
-.speaker-info{
-  @include shift(1);
-  @include span-columns(7);
-}
-
-.challange-info{
-  @include span-columns(12);
-}
-
-.challange-info{
-  padding-top: 0;
-}
-
 .lead-about{
   position: absolute;
   bottom: 0;
 }
 
-#mailer{
-  background-color: $primary-color;
-  color: #fff;
-}
-
-.mailer-container{
-  @include span-columns(9);
-  @include shift(3);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}

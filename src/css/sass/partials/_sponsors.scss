@@ -1,0 +1,25 @@
+#sponsors{
+  background-color: #eee;
+}
+
+.sponsor{
+  @include span-columns(3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 1px solid $border-color;
+  text-align: center;
+}
+
+.sponsor-container{
+  border-bottom: 1px solid $border-color;
+  @include outer-container;
+}
+
+.sponsor:nth-of-type(4n){
+  @include omega;
+  border-right: none;
+}
+
+.sponsor img {
+  width: 50%;
+}
