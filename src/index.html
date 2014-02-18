@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <title>X / ED 2014</title>
+  <!-- Twitter Card Meta -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@xovered">
+  <meta name="twitter:creator" content="@xovered">
+  <meta name="twitter:title" content="X / ED">
+  <meta name="twitter:description" content="Conference and Product Fest, Edinburgh, June 5th - June 8th">
+  <meta name="twitter:image" content="http://xovered.com/img/xed-avatar-cards.png">
+
+  <!-- Facebook OG Shizzy -->
+  <meta property="og:image" content="http://xovered.com/img/xed-avatar-cards.png" />
+  <meta property="og:url" content="http://xovered.com/" />
+  <meta property="og:title" content="X / ED" />
+  <meta property="og:discription" content="Conference and Product Fest, Edinburgh, June 5th - June 8th" />
+
 
   <link rel="stylesheet" href="components/normalize-css/normalize.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
@@ -84,6 +99,7 @@
           <div class="module-col">
             <div class="challange-info">
               <h3 class="speaker-name"><span class="label">Topic: </span>Digital Inclusion / Big Data</h3>
+              <p class="challange-desc">Create something that persuades existing educational institutions to open their data to the world</p>
               <p class="speaker-desc"></p>
           </div>
         </div>
@@ -104,6 +120,7 @@
           <div class="module-col">
             <div class="challange-info">
               <h3 class="speaker-name"><span class="label">Topic: </span>Knowledge Propagation</h3>
+              <p class="challange-desc">Create something that persuades existing educational institutions to open their data to the world</p>
               <p class="speaker-desc"></p>
           </div>
         </div>
@@ -111,41 +128,6 @@
     </div>
     </div>
   </section><!-- end schedule -->
-
-  <!-- <section id="sponsors" class="content-module">
-    <div class="grid-container">
-      <div class="sponsor-container">
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-      </div>
-
-      <div class="sponsor-container">
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- end of sponsors -->
 
   <section id="mailer">
     <div class="grid-container">
@@ -162,6 +144,41 @@
   </section>
   <!-- end of mailer -->
 
+  <section id="sponsors" class="content-module">
+    <div class="grid-container">
+      <div class="sponsor-container">
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+      </div>
+
+      <div class="sponsor-container">
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+        <div class="sponsor">
+          <img src="img/sponsor.png" alt="sponsor" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of sponsors -->
+
   <section id="blog">
 
     <div class="grid-container">
@@ -170,14 +187,13 @@
       </div>
     </div>
 
-
     <div class="bar">
       <div class="grid-container">
         <div class="post-date">
           <span>01.03</span>
         </div>
         <div class="blog-link">
-          <h2 class="blog-title">The importance of market led vocational... </h2>
+          <h2 class="blog-title">The importance of market led vocational training</h2>
         </div>
       </div>
     </div>
@@ -250,6 +266,16 @@
 
     $('#about').css('height', aboutHeight + 'px');
   });
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-24889671-5', 'xovered.com');
+    ga('send', 'pageview');
+
   </script>
 </body>
 </html>

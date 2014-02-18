@@ -12,3 +12,15 @@ footer{
 .footer-col:first-of-type{
   @include shift(3);
 }
+
+.footer-menu{
+  list-style-type: none;
+  font-size: 1.125em;
+  padding:0;
+}
+
+.menu-header{
+  font-family: $alt-font-family;
+}
+
+.menu-item{}
