@@ -31,7 +31,7 @@
 <body>
 
   <!-- above the fold -->
-  <header>
+  <header id="header">
     <div class="grid-container">
       <div class="brand">
         <img src="img/xed-brand.svg" alt="Logo" />
@@ -43,6 +43,12 @@
   </header>
 
   <section id="about">
+    <video id="bg-video" poster="video/bg-placeholder.png" autoplay preload loop>
+      <source src="video/bg-ambient.webm" type='video/webm; codecs="vp8, vorbis"' />
+      <source src="video/bg-ambient.ogv" type='video/ogg; codecs="theora, vorbis"' />
+      <source src="video/bg-ambient.mp4" />
+    </video>
+    <div id="bg-overlay"></div>
     <div class="grid-container">
       <div class="lead-about">
         <p class="headline">Conference &amp; Hackathon<br> Edinburgh, Scotland <br> June 05 &mdash; June 10</p>
@@ -288,7 +294,7 @@
         hHeight = $('header').height(),
         aboutHeight = wHeight - hHeight;
 
-    $('#about').css('height', aboutHeight + 'px');
+    $('#about').css('height', wHeight + 'px');
   });
   </script>
   <script>
