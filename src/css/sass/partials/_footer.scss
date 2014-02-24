@@ -21,6 +21,20 @@ footer{
 
 .menu-header{
   font-family: $alt-font-family;
+  padding-bottom: 3px;
+  border-bottom: 2px solid $secondary-color;
+  display:inline-block;
 }
 
-.menu-item{}
+.footer-menu{
+  font-size: 1.25em;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: $secondary-color;
+  }
+}

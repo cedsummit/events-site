@@ -24,6 +24,7 @@
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <!-- site stylesheet -->
   <link rel="stylesheet" href="css/main.css" />
@@ -37,21 +38,16 @@
         <img src="img/xed-brand.svg" alt="Logo" />
       </div>
       <nav class="menu">
-        <button class="button">Get Tickets</button>
+        <button id="tickets" class="button">Get Tickets</button>
       </nav>
     </div>
   </header>
 
   <section id="about">
-    <video id="bg-video" poster="video/bg-placeholder.png" autoplay preload loop>
-      <source src="video/bg-ambient.webm" type='video/webm; codecs="vp8, vorbis"' />
-      <source src="video/bg-ambient.ogv" type='video/ogg; codecs="theora, vorbis"' />
-      <source src="video/bg-ambient.mp4" />
-    </video>
     <div id="bg-overlay"></div>
     <div class="grid-container">
       <div class="lead-about">
-        <p class="headline">Conference &amp; Hackathon<br> Edinburgh, Scotland <br> June 05 &mdash; June 10</p>
+        <p class="headline">Conference &amp; Product Fest<br> Edinburgh, Scotland <br> June 05 &mdash; June 10</p>
       </div>
     </div>
   </section>
@@ -66,16 +62,16 @@
           <div class="module-col">
             <h3 class="module-header">Conference</h3>
             <h4><time datetime="2014-06-05">Thursday 5th June</time></h4>
-            <p>A day full of talks by renowned international, speakers held in the royal society. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.</p>
-            <h4 class="price">£300</h4>
+            <p>A day full of talks by renowned speakers held at Dynamic Earth. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.</p>
+            <h4 class="price"><i class="fa fa-ticket price-label"></i>£300</h4>
           </div>
           <!-- /Conference -->
           <!-- Hackathon -->
           <div class="module-col">
-            <h3 class="module-header">Hackathon</h3>
+            <h3 class="module-header">Product Fest</h3>
             <h4><time datetime="2014-06-06">Friday 6th June</time> - <time datetime="2014-06-08">Sunday 8th June</time></h4>
-            <p>A day full of talks by renowned international, speakers held in the royal society. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.</p>
-            <h4 class="price">£30</h4>
+            <p>The Product Fest will bring together designers developers and marketers over the course of a weekend in the Roxy Arthouse. The focus will be on creating new disruptive products within the vocational training space.</p>
+            <h4 class="price"><i class="fa fa-ticket price-label"></i>£30</h4>
           </div>
           <!-- /Hackathon -->
         </div>
@@ -103,54 +99,24 @@
   <!-- sponsors -->
   <section id="sponsors" class="content-module">
     <div class="grid-container">
-      <div class="sponsor-container">
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
+      <div class="sponsor-message">
+        organized by:
       </div>
-
-      <div class="sponsor-container">
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
-        <div class="sponsor">
-          <img src="img/sponsor.png" alt="sponsor" />
-        </div>
+      <div class="ia-link">
+        <a href="http://insightarcade.com"><img class="ia-logo" src="img/ia-logo.png" /></a>
       </div>
     </div>
   </section>
   <!-- /sponsors -->
+
   <footer>
     <div class="grid-container">
       <div class="footer-col">
         <ul class="footer-menu">
           <h4 class="menu-header">Follow Us</h4>
-          <li class="menu-item">Twitter</li>
-          <li class="menu-item">Facebook</li>
-          <li class="menu-item">Linkedin</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <ul class="footer-menu">
-          <h4 class="menu-header">Contact</h4>
-          <li class="menu-item">hello@xovered.com</li>
-          <li class="menu-item">+44 (0) 7939 082972</li>
+          <li class="menu-item"><a href="https://twitter.com/xovered">Twitter</a></li>
+          <li class="menu-item"><a href="https://www.facebook.com/xovered">Facebook</a></li>
+          <li class="menu-item"><a href="https://linkedin.com/company/insight-arcade">Linkedin</a></li>
         </ul>
       </div>
 
@@ -162,16 +128,33 @@
           <li class="menu-item">Venues</li>
         </ul>
       </div>
+
+      <div class="footer-col">
+        <ul class="footer-menu">
+          <h4 class="menu-header">Contact</h4>
+          <li class="menu-item">hello@xovered.com</li>
+          <li class="menu-item">+44 (0) 7939 082972</li>
+        </ul>
+      </div>
     </div>
   </footer>
 
-  <script src="components/jquery/jquery.min.js"></script>
+  <!-- jQuery and plugins -->
+  <script src="components/jquery/dist/jquery.min.js"></script>
+
   <script>
   $(document).ready(function () {
     var wHeight = $(window).height(),
         hHeight = $('header').height(),
         aboutHeight = wHeight - hHeight;
 
+        var videoTemplate = '<video id="bg-video" poster="video/bg-placeholder.png" autoplay loop>' +
+                                '<source src="video/bg-ambient.webm" type="video/webm" />' +
+                                '<source src="video/bg-ambient.ogv" type="video/ogg" />' +
+                                '<source src="video/bg-ambient.mp4" />' +
+                             '</video>'
+
+    $('#about').prepend(videoTemplate);
     $('#about').css('height', wHeight + 'px');
   });
   </script>
