@@ -37,7 +37,7 @@ nav {
   width: auto;
   height: auto;
   z-index: -200;
-  background: url(../../video/bg-placeholder.png) no-repeat;
+  background: url(../../video/ambient.png) no-repeat;
   background-size: cover; }
 
 #bg-overlay {
