@@ -9,14 +9,14 @@
   <meta name="twitter:site" content="@xovered">
   <meta name="twitter:creator" content="@xovered">
   <meta name="twitter:title" content="X / ED">
-  <meta name="twitter:description" content="Conference and Product Fest, Edinburgh, June 5th - June 8th">
+  <meta name="twitter:description" content="Conference and Product Forge, Edinburgh, June 5th - June 8th">
   <meta name="twitter:image" content="http://2014.xovered.com/img/xed-avatar-cards.png">
 
   <!-- Facebook OG Shizzy -->
   <meta property="og:image" content="http://2014.xovered.com/img/xed-avatar-cards.png" />
   <meta property="og:url" content="http://2014.xovered.com/" />
   <meta property="og:title" content="X / ED" />
-  <meta property="og:discription" content="Conference and Product Fest, Edinburgh, June 5th - June 8th" />
+  <meta property="og:discription" content="Conference and Product Forge, Edinburgh, June 5th - June 8th" />
 
   <!-- Reset -->
   <link rel="stylesheet" href="components/normalize-css/normalize.css" />
@@ -38,7 +38,7 @@
         <img src="img/xovered-extended.svg" alt="Logo" />
       </div>
       <nav class="menu">
-        <button id="tickets" class="button">Get Tickets</button>
+        <button id="tickets" class="button" href="#mailer">Get Tickets</button>
       </nav>
     </div>
   </header>
@@ -46,7 +46,7 @@
   <section id="about">
     <div class="grid-container">
       <div class="lead-about">
-        <p class="headline">Conference &amp; Product Fest<br> Edinburgh, Scotland <br> June 05 &mdash; June 10</p>
+        <p class="headline">Conference &amp; Product Forge<br> Edinburgh, Scotland <br> June 05 &mdash; June 10</p>
       </div>
     </div>
   </section>
@@ -55,6 +55,7 @@
   <!-- schedule -->
   <section id="schedule">
     <div class="content-module">
+      <img class="venues-img" src="img/venues.png" alt="" />
       <div class="grid-container">
         <div class="module-row">
           <!-- Conference -->
@@ -67,9 +68,9 @@
           <!-- /Conference -->
           <!-- Hackathon -->
           <div class="module-col">
-            <h3 class="module-header">Product Fest</h3>
+            <h3 class="module-header">Product Forge</h3>
             <h4><time datetime="2014-06-06">Friday 6th June</time> - <time datetime="2014-06-08">Sunday 8th June</time></h4>
-            <p class="event-intro">The Product Fest will bring together designers developers and marketers over the course of a weekend in the Roxy Arthouse. The focus will be on creating new disruptive products within the vocational training space.</p>
+            <p class="event-intro">The Product Forge will bring together designers developers and marketers over the course of a weekend in the Roxy Arthouse. The focus will be on creating new disruptive products within the vocational training space.</p>
             <h4 class="price">£30</h4>
           </div>
           <!-- /Hackathon -->
@@ -148,14 +149,28 @@
         hHeight = $('header').height(),
         aboutHeight = wHeight - hHeight;
 
-        var videoTemplate = '<video id="bg-video" poster="video/ambient.png" autoplay loop>' +
-                                '<source src="video/ambient.webm" type="video/webm" />' +
-                                '<source src="video/ambient.ogv" type="video/ogg" />' +
-                                '<source src="video/ambient.mp4" />' +
-                             '</video>'
+    var videoTemplate = '<video id="bg-video" poster="video/ambient.png" autoplay loop>' +
+                            '<source src="video/ambient.webm" type="video/webm" />' +
+                            '<source src="video/ambient.ogv" type="video/ogg" />' +
+                            '<source src="video/ambient.mp4" />' +
+                         '</video>';
+
+     var ticketsMessage = 'Tickets are not currently available but will be shortly, if you would like to receive updates when tickets are live or general information about the event enter your email below';
 
     $('#about').prepend(videoTemplate);
     $('#about').css('height', wHeight + 'px');
+
+    $('#tickets').click(function(e){
+        e.preventDefault();
+
+        $('.mailer-message').text(ticketsMessage);
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
+
+
   });
   </script>
   <script>

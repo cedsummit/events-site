@@ -29,7 +29,7 @@ nav {
     margin-right: 0; }
 
 #bg-video {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -178,6 +178,13 @@ nav {
   position: absolute;
   bottom: 0; }
 
+img {
+  width: 100%;
+  height: auto; }
+
+.venues-img {
+  padding-top: 40px; }
+
 #mailer {
   background-color: #202527;
   color: #fff; }
@@ -310,7 +317,7 @@ nav {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 23.23176%; }
   .ia-link:last-child {
     margin-right: 0; }
 
@@ -411,13 +418,6 @@ footer {
     text-decoration: none; }
   .footer-menu a:hover {
     color: #d6992b; }
-
-html {
-  background: url(../../img/background.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
 
 body {
   font-family: "Open Sans", sans-serif;
