@@ -105,8 +105,13 @@ nav {
 .price {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 3.0em;
-  color: #b3b3b3; }
+  font-size: 2.0em;
+  color: #b3b3b3;
+  background-color: #202527;
+  display: inline;
+  padding: 10px 20px;
+  margin-top: 30px;
+  letter-spacing: 1px; }
 
 .speaker-title {
   padding-top: 0;
@@ -130,6 +135,9 @@ nav {
   color: #e0e0e0;
   font-size: 0.9em;
   padding-right: 20px; }
+
+.event-intro {
+  padding-bottom: 20px; }
 
 .content-module {
   background-color: #fff;

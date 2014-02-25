@@ -15,8 +15,13 @@
 .price{
   font-family: $alt-font-family;
   font-weight: normal;
-  font-size: 3.0em;
+  font-size: 2.0em;
   color: $light-color;
+  background-color: $primary-color;
+  display:inline;
+  padding:10px 20px;
+  margin-top: 30px;
+  letter-spacing: 1px;
 }
 
 .speaker-title {
@@ -25,7 +30,6 @@
   padding-bottom: 20px;
   font-family: $alt-font-family;
 }
-
 
 .desc{
   margin: 0;
@@ -45,4 +49,8 @@
   color: #e0e0e0;
   font-size:0.9em;
   padding-right: 20px;
+}
+
+.event-intro{
+  padding-bottom: 20px;
 }
