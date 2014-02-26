@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>X / ED 2014</title>
+  <title>Crossover Ediunburgh 2014</title>
   <!-- Twitter Card Meta -->
 
   <meta name="twitter:card" content="summary">
@@ -38,7 +38,10 @@
         <img src="img/xovered-extended.svg" alt="Logo" />
       </div>
       <nav class="menu">
-        <button id="tickets" class="button" href="#mailer">Get Tickets</button>
+          <a class="nav-menu-item" href="#conference">Conference</a>
+          <a class="nav-menu-item" href="#product-fest">Product Forge</a>
+          <a class="nav-menu-item" href="#organizers">Organizers</a>
+          <a class="nav-menu-item last-menu-item" href="#mailer">Tickets</a>
       </nav>
     </div>
   </header>
@@ -46,14 +49,14 @@
   <section id="about">
     <div class="grid-container">
       <div class="lead-about">
-        <p class="headline">Education Tech Expo <br> <span class="secondary">Edinburgh, Scotland <br> June 2014</span></p>
+        <p class="headline">Crossover Edinburgh<br> <span class="secondary">Education &amp; Tech Expo<br> June 2014</span></p>
       </div>
     </div>
   </section>
   <!-- /above the fold -->
 
   <!-- event -->
-  <section class="event">
+  <section id="conference" class="event">
     <div class="content-wrapper">
       <div class="grid-container">
         <!-- event image -->
@@ -78,16 +81,11 @@
   </section>
   <!-- /event -->
 
-  <section class="event">
+  <section id="product-fest" class="event">
     <div class="content-wrapper">
       <div class="grid-container">
-        <!-- event image -->
-        <div class="event-image">
-          <img src="img/roxy.png" alt="Assembly Roxy" />
-        </div>
-
         <!-- event info -->
-        <div class="event-info">
+        <div class="product-info">
           <h2 class="event-title">Product Forge</h2>
           <div class="event-details">
             <a class="event-detail event-location" href="https://www.google.co.uk/maps/place/Assembly+Roxy/@55.9475073,-3.1844819,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x3bb714d6833e1422"><i class="fa detail-icon fa-map-marker"></i>Assembly Roxy</a>
@@ -97,6 +95,10 @@
           <p class="event-discription">
             A day full of talks by renowned speakers held at Dynamic Earth. The talks will focus around a range of areas within education technology with an emphasis on open data and vocational training.
           </p>
+        </div>
+        <!-- event image -->
+        <div class="product-image">
+          <img src="img/roxy.png" alt="Assembly Roxy" />
         </div>
       </div>
     </div>
@@ -119,18 +121,11 @@
   </section>
   <!-- /mailer -->
 
-  <!-- sponsors -->
-  <section id="sponsors" class="content-module">
-    <div class="grid-container">
-      <div class="sponsor-message">
-        organized by:
-      </div>
-      <div class="ia-link">
-        <a href="http://insightarcade.com"><img class="ia-logo" src="img/ia-logo.png" /></a>
-      </div>
-    </div>
+  <!-- organizers -->
+  <section class="organizers">
+
   </section>
-  <!-- /sponsors -->
+  <!-- /organizers -->
 
   <footer>
     <div class="grid-container">
@@ -181,7 +176,7 @@
     $('#about').prepend(videoTemplate);
     $('#about').css('height', wHeight + 'px');
 
-    $('#tickets').click(function(e){
+    $('.nav-menu-item').click(function(e){
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top

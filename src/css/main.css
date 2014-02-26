@@ -5,11 +5,10 @@
 
 .brand {
   padding-top: 30px;
-  padding-bottom: 30px;
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 40.29137%; }
   .brand:last-child {
     margin-right: 0; }
 
@@ -17,16 +16,35 @@
   width: 150px;
   height: auto; }
 
-nav {
-  float: right;
-  padding-top: 30px;
+.menu ul {
+  color: white;
+  list-style-type: none;
   display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  text-align: right; }
-  nav:last-child {
-    margin-right: 0; }
+  margin: 0; }
+
+.menu {
+  z-index: 1001;
+  margin: 0; }
+
+.menu li {
+  display: inline;
+  margin: 0; }
+
+.nav-menu-item {
+  display: inline-block;
+  padding: 30px 30px;
+  margin: 0;
+  border-left: 1px solid #374043;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid #202527;
+  margin-left: -8px; }
+
+.last-menu-item {
+  border-right: 1px solid #374043; }
+
+.active-menu-item, .nav-menu-item:hover {
+  background-color: #374043; }
 
 #bg-video {
   position: fixed;
@@ -52,12 +70,14 @@ nav {
   opacity: 0.6; }
 
 #header {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; }
+  z-index: 999;
+  background-color: #202527;
+  border-bottom: 1px solid #374043; }
 
 .secondary {
   color: #7e8e95; }
@@ -249,6 +269,19 @@ img {
     display: block;
     border-radius: 50%; }
 
+.product-image {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+  text-align: center; }
+  .product-image:last-child {
+    margin-right: 0; }
+  .product-image img {
+    display: block;
+    border-radius: 50%; }
+
 .event-info {
   display: block;
   float: left;
@@ -256,6 +289,14 @@ img {
   width: 57.35098%;
   margin-left: 8.5298%; }
   .event-info:last-child {
+    margin-right: 0; }
+
+.product-info {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .product-info:last-child {
     margin-right: 0; }
 
 .event-title {
