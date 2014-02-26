@@ -17,12 +17,18 @@
 @import "partials/blog";
 @import "partials/footer";
 
+body, html{
+  height:100%;
+}
+
 body{
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $primary-color;
   font-size: 16px;
+  overflow-y:scroll;
+  background-color: $primary-color;
 }
 
 .grid-container{

@@ -2,17 +2,15 @@
 
 $(document).ready(function () {
   var wHeight = $(window).height(),
-      hHeight = $('header').height(),
+      hHeight = $('#header').height(),
       aboutHeight = wHeight - hHeight;
 
-  var videoTemplate = '<video id="bg-video" poster="video/ambient.png" autoplay loop>' +
-                          '<source src="video/ambient.webm" type="video/webm" />' +
-                          '<source src="video/ambient.ogv" type="video/ogg" />' +
-                          '<source src="video/ambient.mp4" />' +
-                       '</video>';
+  var videoTemplate = '<source src="video/ambient.webm" type="video/webm" />' +
+                      '<source src="video/ambient.ogv" type="video/ogg" />' +
+                      '<source src="video/ambient.mp4" />';
 
-  $('#about').prepend(videoTemplate);
-  $('#about').css('height', wHeight + 'px');
+  // $('#bg-video').prepend(videoTemplate);
+  // $('#about').css('height', wHeight + 'px');
 
   $('.nav-menu-item').click(function(e){
       e.preventDefault();
@@ -35,14 +33,10 @@ $(document).ready(function () {
         if (item.length) { return item; }
       });
 
-      console.log(menuItems);
-      console.log(scrollItems);
-
   // Bind to scroll
   $(window).scroll(function(){
      // Get container scroll position
      var fromTop = $(this).scrollTop()+topMenuHeight;
-     console.log(fromTop);
      // Get id of current scroll item
      var cur = scrollItems.map(function(){
        if ($(this).offset().top < fromTop)
@@ -60,7 +54,7 @@ $(document).ready(function () {
 
   //Make sure things resize!
   $( window ).resize(function() {
-    var wHeight = $(window).height(),
+        wHeight = $(window).height(),
         hHeight = $('header').height(),
         aboutHeight = wHeight - hHeight;
 
