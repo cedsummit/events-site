@@ -1,0 +1,49 @@
+#organisers{
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-member{
+  @include span-columns(3);
+  text-align: center;
+  img{
+    display:inline-block;
+    width: 75%;
+    height:auto;
+    border-radius:50%;
+  }
+}
+
+.member-name{
+  font-family: $alt-font-family;
+  font-size: 1.0em;
+  margin: 0;
+  padding:15px 0 5px 0;
+}
+
+.member-position{
+  color: #797C7D;
+  font-weight: 400;
+  margin: 0;
+  padding:0 0 5px 0;
+}
+
+.member-twitter{
+  display: inline-block;
+  color: #845D1E;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding:0 0 5px 0;
+}
+
+.team-module{
+  padding-top: 40px;
+}
+
+.team-logo{
+  @include span-columns(4);
+  text-align: center;
+  padding:40px;
+}

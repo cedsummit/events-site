@@ -16,34 +16,24 @@
   width: 150px;
   height: auto; }
 
-.menu ul {
-  color: white;
-  list-style-type: none;
-  display: block;
-  margin: 0; }
-
 .menu {
-  z-index: 1001;
-  margin: 0; }
-
-.menu li {
-  display: inline;
   margin: 0; }
 
 .nav-menu-item {
-  display: inline-block;
+  display: block;
+  float: left;
   padding: 30px 30px;
   margin: 0;
   border-left: 1px solid #374043;
   text-decoration: none;
   color: white;
   border-right: 1px solid #202527;
-  margin-left: -8px; }
+  margin-right: -1px; }
 
-.last-menu-item {
+.nav-menu-item:last-of-type {
   border-right: 1px solid #374043; }
 
-.active-menu-item, .nav-menu-item:hover {
+.active, .nav-menu-item:hover {
   background-color: #374043; }
 
 #bg-video {
@@ -77,10 +67,14 @@
   right: 0;
   z-index: 999;
   background-color: #202527;
-  border-bottom: 1px solid #374043; }
+  border-bottom: 1px solid #374043;
+  opacity: 0.99; }
 
 .secondary {
   color: #7e8e95; }
+
+#about {
+  min-height: 800px; }
 
 .button {
   font-weight: 600;
@@ -254,7 +248,7 @@ img {
 .event {
   display: block;
   border-bottom: 1px solid #e0e0e0;
-  padding: 160px 0;
+  padding: 80px 0;
   background-color: white; }
 
 .event-image {
@@ -375,6 +369,58 @@ img {
   background-color: #202527;
   border: 5px solid #2a3335;
   color: #fff; }
+
+#organisers {
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+.team-member {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  text-align: center; }
+  .team-member:last-child {
+    margin-right: 0; }
+  .team-member img {
+    display: inline-block;
+    width: 75%;
+    height: auto;
+    border-radius: 50%; }
+
+.member-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.0em;
+  margin: 0;
+  padding: 15px 0 5px 0; }
+
+.member-position {
+  color: #797C7D;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 5px 0; }
+
+.member-twitter {
+  display: inline-block;
+  color: #845D1E;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0 0 5px 0; }
+
+.team-module {
+  padding-top: 40px; }
+
+.team-logo {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  padding: 40px; }
+  .team-logo:last-child {
+    margin-right: 0; }
 
 .speaker-img, .challange-img {
   display: block;
