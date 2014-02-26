@@ -50,3 +50,7 @@ nav{
   right: 0;
   z-index: 9999;
 }
+
+.secondary{
+  color: lighten($primary-color, 40%);
+}

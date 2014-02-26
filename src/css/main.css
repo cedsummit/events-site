@@ -59,6 +59,9 @@ nav {
   right: 0;
   z-index: 9999; }
 
+.secondary {
+  color: #7e8e95; }
+
 .button {
   font-weight: 600;
   padding: 10px 5%;
@@ -156,7 +159,7 @@ nav {
   float: left;
   margin-right: 2.35765%;
   width: 40.29137%;
-  padding-top: 100px; }
+  padding-top: 30px; }
   .module-col:nth-of-type(1):last-child {
     margin-right: 0; }
 
@@ -167,7 +170,7 @@ nav {
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 8.5298%;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 100px;
   border-left: 1px solid #e0e0e0;
   padding-left: 5.8538em; }
@@ -178,12 +181,116 @@ nav {
   position: absolute;
   bottom: 0; }
 
+.conf-header {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #202527;
+  padding-top: 140px;
+  margin-bottom: 0;
+  opacity: 0.96; }
+
+.prod-header {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #202527;
+  padding-top: 140px;
+  margin-bottom: 0;
+  opacity: 0.96; }
+
+.event-date {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 32px; }
+
+.no-border {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 8.5298%;
+  padding-top: 30px;
+  padding-left: 5.8538em; }
+  .no-border:last-child {
+    margin-right: 0; }
+
 img {
   width: 100%;
   height: auto; }
 
 .venues-img {
-  padding-top: 40px; }
+  padding-top: 0px;
+  border-top: 4px solid #202527; }
+
+.headers {
+  background: url(../../../img/venues.png) no-repeat;
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+.event {
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 160px 0;
+  background-color: white; }
+
+.event-image {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center; }
+  .event-image:last-child {
+    margin-right: 0; }
+  .event-image img {
+    display: block;
+    border-radius: 50%; }
+
+.event-info {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 8.5298%; }
+  .event-info:last-child {
+    margin-right: 0; }
+
+.event-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  color: #202527; }
+
+.event-details {
+  padding-top: 30px;
+  padding-bottom: 15px; }
+
+.event-detail {
+  display: inline-block;
+  color: #845D1E;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px; }
+
+.event-location {
+  display: block-inline;
+  background-color: #efefef; }
+
+.event-location:hover {
+  background-color: #e7e7e7; }
+
+.event-discription {
+  color: #797C7D;
+  line-height: 1.50em;
+  font-size: 1.0em; }
+
+.detail-icon {
+  padding: 0 5px;
+  color: #d6992b; }
 
 #mailer {
   background-color: #202527;
