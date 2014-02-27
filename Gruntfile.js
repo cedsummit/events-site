@@ -22,19 +22,17 @@ module.exports = function (grunt) {
     },
 
     copy: {
-        build: {
-          cwd: 'src',
-          src: [ '**', '!**.*scss' ],
-          dest: 'build',
-          expand: true
-        }
+      main: {
+        cwd: 'src/',
+        src: ['!css/sass/**/*.scss', '*', '**/*.css', 'video/**', '**/*.png', '**/*.jpg', '**/*.js'],
+        dest: 'build/',
+        expand: true
+      },
     },
 
     clean: {
-      build: {
-        src: [ 'build' ]
-      }
-    },
+      build: 'build/*'
+    }
 
   });
 
@@ -50,5 +48,5 @@ module.exports = function (grunt) {
   grunt.registerTask('dev', ['watch']);
 
   //build
-  grunt.registerTask('build', ['copy']);
+  grunt.registerTask('build', ['clean', 'copy']);
 };
