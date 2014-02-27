@@ -24,32 +24,17 @@ module.exports = function (grunt) {
     copy: {
       main: {
         cwd: 'src/',
-        src: ['!css/sass/**/*.scss', '*', '**/*.css', 'video/**', '**/*.png', '**/*.jpg', '**/*.js'],
+        src: ['!.git', '!css/sass/**/*.scss', '*', '**/*.css', 'video/**', '**/*.png', '**/*.jpg', '**/*.js'],
         dest: 'build/',
         expand: true
       },
     },
 
     clean: {
-      build: ['build/**', '!.git']
+      build: ['build/**', '!build/.git']
     },
 
     shell: {
-        initDeploy: {
-          options: {
-            stdout: true
-          },
-          command: [
-            'cd build/',
-            'rm -rf .git',
-            'git init',
-            'git add .',
-            'git commit -am "Deploy"',
-            'git remote add origin https://github.com/xovered/event-deploy-test.git',
-            'git push -u origin master --force'
-          ].join('&&')
-        },
-
         deploy: {
           options: {
             stdout: true
@@ -57,8 +42,7 @@ module.exports = function (grunt) {
           command: [
             'cd build/',
             'git add .',
-            'git commit -am "Deploy"',
-            'git push origin master'
+            'git commit -am "Deploy <%= grunt.template.today("dd-mm-yyyy") %>"',
           ].join('&&')
         },
     },
