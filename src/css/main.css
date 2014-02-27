@@ -57,8 +57,14 @@
   border-bottom: 1px solid #374043;
   opacity: 0.99; }
 
+.headline {
+  font-size: 4.0em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff; }
+
 .secondary {
-  color: #7e8e95; }
+  color: #b6bfc3; }
 
 #about {
   height: 100%; }
@@ -93,12 +99,6 @@
   color: #fff;
   border: 3px solid #202527;
   outline: none; }
-
-.headline {
-  font-size: 4.0em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #fff; }
 
 .module-header {
   font-size: 1.5em;
@@ -322,15 +322,26 @@ img {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 74.41059%;
-  margin-left: 25.58941%;
+  width: 65.88078%;
   padding-top: 200px;
   padding-bottom: 200px; }
   .mailer-container:last-child {
     margin-right: 0; }
 
+.mailer-illustration {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding-top: 200px;
+  font-size: 6.0em;
+  color: #1b2021;
+  text-align: center; }
+  .mailer-illustration:last-child {
+    margin-right: 0; }
+
 .mailer-message {
-  font-size: 2.0em; }
+  font-size: 1.9em; }
 
 .mailer-form {
   margin-top: 50px; }
@@ -338,7 +349,7 @@ img {
 .email {
   width: 60%;
   float: left;
-  padding: 10px 5%;
+  padding: 10px 2%;
   background-color: #202527;
   border: 5px solid #2a3335;
   border-right: none; }
@@ -359,17 +370,14 @@ img {
 
 #organisers {
   background-color: white;
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px; }
 
 .team-member {
-  display: block;
+  width: 20%;
   float: left;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  text-align: center; }
-  .team-member:last-child {
-    margin-right: 0; }
+  text-align: center;
+  padding: 0; }
   .team-member img {
     display: inline-block;
     width: 75%;
@@ -380,21 +388,27 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.0em;
   margin: 0;
-  padding: 15px 0 5px 0; }
+  font-weight: normal;
+  padding: 15px 0 0 0; }
 
 .member-position {
   color: #797C7D;
   font-weight: 400;
   margin: 0;
-  padding: 0 0 5px 0; }
+  padding: 0;
+  font-size: 0.9em; }
 
 .member-twitter {
   display: inline-block;
-  color: #845D1E;
+  color: #ad7b21;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-decoration: none;
-  padding: 0 0 5px 0; }
+  margin: 0; }
+
+.member-twitter:hover {
+  color: #ad7b21;
+  color: #d6992b; }
 
 .team-module {
   padding-top: 40px; }
@@ -408,6 +422,29 @@ img {
   padding: 40px; }
   .team-logo:last-child {
     margin-right: 0; }
+
+.ia-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #202527;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #202527; }
+
+.ia-link:hover {
+  border-bottom: 3px solid #d6992b; }
+
+.organiser-intro {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding-bottom: 40px;
+  text-align: center; }
+  .organiser-intro:last-child {
+    margin-right: 0; }
+
+.organiser-title {
+  color: #65757b; }
 
 .speaker-img, .challange-img {
   display: block;
@@ -491,16 +528,6 @@ img {
 
 .ia-logo:hover {
   opacity: 0.9; }
-
-.ia-link {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .ia-link:last-child {
-    margin-right: 0; }
 
 #blog {
   background-color: #fff; }

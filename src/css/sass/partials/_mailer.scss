@@ -4,14 +4,21 @@
 }
 
 .mailer-container{
-  @include span-columns(9);
-  @include shift(3);
+  @include span-columns(8);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
+.mailer-illustration{
+  @include span-columns(4);
+  padding-top: 200px;
+  font-size: 6.0em;
+  color: darken($primary-color, 2%);
+  text-align: center;
+}
+
 .mailer-message{
-  font-size: 2.0em;
+  font-size: 1.9em;
 }
 
 .mailer-form{
@@ -21,7 +28,7 @@
 .email{
   width: 60%;
   float: left;
-  padding: 10px 5%;
+  padding: 10px 2%;
   background-color: $primary-color;
   border: 5px solid $border-color-light;
   border-right: none;
