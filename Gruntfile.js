@@ -58,7 +58,6 @@ module.exports = function (grunt) {
             'cd build/',
             'git add .',
             'git commit -am "Deploy"',
-            'git remote add origin https://github.com/xovered/event-deploy-test.git',
             'git push origin master'
           ].join('&&')
         },
