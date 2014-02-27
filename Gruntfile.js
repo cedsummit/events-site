@@ -31,21 +31,8 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      build: ['build/**', '!build/.git']
-    },
-
-    shell: {
-        deploy: {
-          options: {
-            stdout: true
-          },
-          command: [
-            'cd build/',
-            'git add .',
-            'git commit -am "Deploy <%= grunt.template.today("dd-mm-yyyy") %>"',
-          ].join('&&')
-        },
-    },
+      build: ['build/**']
+    }
 
   });
 
@@ -62,7 +49,4 @@ module.exports = function (grunt) {
 
   //build
   grunt.registerTask('build', ['clean', 'copy']);
-
-  //deploy
-  grunt.registerTask('deploy', ['clean', 'copy', 'shell:deploy']);
 };
