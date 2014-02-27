@@ -31,8 +31,38 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      build: 'build/*'
-    }
+      build: ['build/**', '!.git']
+    },
+
+    shell: {
+        initDeploy: {
+          options: {
+            stdout: true
+          },
+          command: [
+            'cd build/',
+            'rm -rf .git',
+            'git init',
+            'git add .',
+            'git commit -am "Deploy"',
+            'git remote add origin https://github.com/xovered/event-deploy-test.git',
+            'git push -u origin master --force'
+          ].join('&&')
+        },
+
+        deploy: {
+          options: {
+            stdout: true
+          },
+          command: [
+            'cd build/',
+            'git add .',
+            'git commit -am "Deploy"',
+            'git remote add origin https://github.com/xovered/event-deploy-test.git',
+            'git push origin master'
+          ].join('&&')
+        },
+    },
 
   });
 
@@ -49,4 +79,7 @@ module.exports = function (grunt) {
 
   //build
   grunt.registerTask('build', ['clean', 'copy']);
+
+  //deploy
+  grunt.registerTask('deploy', ['clean', 'copy', 'shell:deploy']);
 };
