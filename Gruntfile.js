@@ -47,6 +47,7 @@ module.exports = function (grunt) {
           'git add .',
           'git commit -am "Deploy <%= grunt.template.today("dd-mm-yyyy") %>"',
           'git remote add origin https://github.com/xovered/xovered.github.io.git',
+          'echo "...This might take a while best to grab a beer!"',
           'git push origin master --force'
         ].join('&&')
       },
