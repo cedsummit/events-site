@@ -55,11 +55,17 @@
   opacity:0.99;
 }
 
+.lead-about{
+  position: absolute;
+  bottom: 50px;
+}
+
 .headline{
-  font-size: 4.0em;
+  font-size: 2.0em;
   font-family: $alt-font-family;
   font-weight: 700;
   color: #fff;
+  @include span-columns(10);
 }
 
 .secondary{
