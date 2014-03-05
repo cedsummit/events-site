@@ -75,3 +75,19 @@
   padding: 0 5px;
   color: $secondary-color;
 }
+
+.cta{
+  padding: 10px 20px;
+  font-family: $alt-font-family;
+  font-size: 1.150em;
+  display:inline-block;
+  color: white;
+  background-color: $secondary-color;
+  text-decoration: none;
+  margin-top: 50px;
+  border: 1px solid darken($secondary-color, 5%);
+}
+
+.cta:hover{
+  background-color: darken($secondary-color, 5%);
+}

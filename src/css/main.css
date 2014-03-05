@@ -360,6 +360,20 @@ img {
   padding: 0 5px;
   color: #d6992b; }
 
+.cta {
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.150em;
+  display: inline-block;
+  color: white;
+  background-color: #d6992b;
+  text-decoration: none;
+  margin-top: 50px;
+  border: 1px solid #c28a26; }
+
+.cta:hover {
+  background-color: #c28a26; }
+
 #mailer {
   background-color: #202527;
   color: #fff; }
