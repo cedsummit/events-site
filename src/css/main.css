@@ -296,7 +296,7 @@ img {
   padding-bottom: 15px; }
 
 .event-detail {
-  display: inline-block;
+  display: block;
   color: #845D1E;
   font-weight: 600;
   font-size: 0.9em;
