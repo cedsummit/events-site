@@ -13,7 +13,7 @@
   @include span-columns(4);
   padding-top: 200px;
   font-size: 6.0em;
-  color: darken($primary-color, 2%);
+  color: lighten($primary-color, 15%);
   text-align: center;
 }
 

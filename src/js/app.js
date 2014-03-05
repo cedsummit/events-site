@@ -9,9 +9,6 @@ $(document).ready(function () {
                       '<source src="video/ambient.ogv" type="video/ogg" />' +
                       '<source src="video/ambient.mp4" />';
 
-  // $('#bg-video').prepend(videoTemplate);
-  // $('#about').css('height', wHeight + 'px');
-
   $('.nav-menu-item').click(function(e){
       e.preventDefault();
       $('html, body').animate({
@@ -25,7 +22,7 @@ $(document).ready(function () {
       topMenuHeight = topMenu.height()+200,
 
       // All list items
-      menuItems = topMenu.find("a"),
+      menuItems = topMenu.find("a.nav-menu-item"),
 
       // Anchors corresponding to menu items
       scrollItems = menuItems.map(function(){
@@ -54,13 +51,26 @@ $(document).ready(function () {
 
   //Make sure things resize!
   $( window ).resize(function() {
-        wHeight = $(window).height(),
-        hHeight = $('header').height(),
-        aboutHeight = wHeight - hHeight;
+    wHeight = $(window).height(),
+    hHeight = $('header').height(),
+    aboutHeight = wHeight - hHeight;
 
-        $('#about').css('height', wHeight + 'px');
+    $('#about').css('height', wHeight + 'px');
   });
-
-
-
+  console.log('Woot');
 });
+
+$(window).focus(function() {
+  console.log('Unpause');
+  $('#bg-video').get(0).play();
+});
+
+$(window).blur(function() {
+    console.log('Pause');
+    $('#bg-video').get(0).pause();
+});
+
+$('#bg-video').on('ended', function () {
+    this.get(0).currentTime = 0;
+    this.get(0).play();
+}, false);

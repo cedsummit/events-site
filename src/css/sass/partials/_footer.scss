@@ -9,10 +9,6 @@ footer{
   padding-bottom: 50px;
 }
 
-.footer-col:first-of-type{
-  @include shift(3);
-}
-
 .footer-menu{
   list-style-type: none;
   font-size: 1.125em;
@@ -37,4 +33,9 @@ footer{
   a:hover{
     color: $secondary-color;
   }
+}
+
+.event-hosts{
+  margin-top: 0;
+  padding: 0;
 }
