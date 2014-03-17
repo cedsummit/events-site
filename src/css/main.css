@@ -13,7 +13,7 @@
     margin-right: 0; }
 
 .brand img {
-  width: 150px;
+  width: 100px;
   height: auto; }
 
 .menu {
@@ -21,6 +21,7 @@
 
 .nav-menu-item {
   display: block;
+  position: relative;
   float: left;
   padding: 30px 30px;
   margin: 0;
@@ -35,6 +36,7 @@
 
 .nav-menu-item-external {
   display: block;
+  position: relative;
   float: left;
   padding: 30px 30px;
   margin: 0;
@@ -43,10 +45,19 @@
   color: white;
   border-right: 1px solid #202527;
   margin-right: -1px;
-  border-right: 1px solid #374043; }
+  border-right: 1px solid #374043;
+  border-left: 1px solid #374043; }
 
 .nav-menu-item-external:hover {
   background-color: #374043; }
+
+.date-label {
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: 16px;
+  color: #d6992b;
+  font-family: "Montserrat", sans-serif; }
 
 #bg-video {
   position: fixed;
