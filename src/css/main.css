@@ -355,6 +355,15 @@ img {
   text-decoration: none;
   padding: 10px 20px; }
 
+.bluf {
+  display: block;
+  color: #845D1E;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: none;
+  text-decoration: none;
+  padding: 10px 0; }
+
 .event-location {
   display: block-inline;
   background-color: #efefef; }
