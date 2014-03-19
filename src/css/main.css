@@ -139,7 +139,8 @@
     color: #4e5a5f;
     font-size: 1.375em;
     padding-left: 0.3125em;
-    padding-right: 0.3125em; }
+    padding-right: 0.3125em;
+    text-decoration: none; }
   .twitter a:hover {
     color: #374043; }
 
