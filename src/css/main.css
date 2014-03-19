@@ -130,6 +130,19 @@
   .overview-illustration:last-child {
     margin-right: 0; }
 
+.twitter {
+  position: fixed;
+  z-index: 9999;
+  top: 1.375em;
+  right: 2.5em; }
+  .twitter a {
+    color: #4e5a5f;
+    font-size: 1.375em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em; }
+  .twitter a:hover {
+    color: #374043; }
+
 .button {
   font-weight: 600;
   padding: 10px 5%;
@@ -355,14 +368,18 @@ img {
   text-decoration: none;
   padding: 10px 20px; }
 
-.bluf {
-  display: block;
-  color: #845D1E;
-  font-weight: 600;
-  font-size: 0.9em;
-  text-transform: none;
-  text-decoration: none;
-  padding: 10px 0; }
+.bluf tr {
+  border-top: 1px solid #e0e0e0; }
+
+.bluf td {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em; }
+
+.bluf th {
+  padding-top: 1.25em;
+  text-align: left;
+  width: 20%;
+  vertical-align: top; }
 
 .event-location {
   display: block-inline;
@@ -707,6 +724,14 @@ footer {
 .event-hosts {
   margin-top: 0;
   padding: 0; }
+
+.copyright {
+  text-align: center;
+  color: white;
+  background-color: #2b3235;
+  margin-top: 0;
+  padding-top: 3.125em;
+  padding-bottom: 3.125em; }
 
 body, html {
   height: 100%; }

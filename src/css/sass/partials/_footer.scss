@@ -39,3 +39,12 @@ footer{
   margin-top: 0;
   padding: 0;
 }
+
+.copyright{
+  text-align: center;
+  color: white;
+  background-color: lighten($primary-color, 5%);
+  margin-top: 0;
+  padding-top: em(50);
+  padding-bottom: em(50);
+}

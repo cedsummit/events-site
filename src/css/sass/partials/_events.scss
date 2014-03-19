@@ -56,14 +56,20 @@
   padding:10px 20px;
 }
 
-.bluf{
-  display: block;
-  color: #845D1E;
-  font-weight: 600;
-  font-size: 0.9em;
-  text-transform: none;
-  text-decoration: none;
-  padding:10px 0;
+.bluf tr{
+  border-top: 1px solid $border-color;
+}
+
+.bluf td{
+    padding-top: em(20);
+    padding-bottom: em(20);
+}
+
+.bluf th {
+  padding-top: em(20);
+  text-align: left;
+  width: 20%;
+  vertical-align: top;
 }
 
 .event-location{
