@@ -114,6 +114,19 @@
   font-size: 1.50em;
   font-family: $alt-font-family;
   color: lighten($primary-color, 25%);
+
+  a{
+    color: lighten($primary-color, 25%);
+    padding-bottom: em(5);
+    margin-left: em(10);
+    text-decoration: none;
+    border-bottom: 2px solid lighten($primary-color, 25%);
+  }
+
+  a:hover{
+    color: lighten($primary-color, 15%);
+    border-bottom: 2px solid lighten($primary-color, 15%);
+  }
 }
 
 .overview-illustration{

@@ -48,3 +48,16 @@ footer{
   padding-top: em(50);
   padding-bottom: em(50);
 }
+
+.footer-logo{
+  display: block;
+  width: 100px;
+  height: auto;
+  opacity: 1.0;
+  @include transition(all 0.2s ease-in-out);
+  margin-right: 0;
+}
+
+.footer-logo:hover{
+  opacity: 0.6;
+}

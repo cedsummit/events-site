@@ -118,6 +118,15 @@
   color: #59676d; }
   .overview-copy:last-child {
     margin-right: 0; }
+  .overview-copy a {
+    color: #59676d;
+    padding-bottom: 0.3125em;
+    margin-left: 0.625em;
+    text-decoration: none;
+    border-bottom: 2px solid #59676d; }
+  .overview-copy a:hover {
+    color: #424d51;
+    border-bottom: 2px solid #424d51; }
 
 .overview-illustration {
   display: block;
@@ -733,6 +742,19 @@ footer {
   margin-top: 0;
   padding-top: 3.125em;
   padding-bottom: 3.125em; }
+
+.footer-logo {
+  display: block;
+  width: 100px;
+  height: auto;
+  opacity: 1.0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0; }
+
+.footer-logo:hover {
+  opacity: 0.6; }
 
 body, html {
   height: 100%; }
