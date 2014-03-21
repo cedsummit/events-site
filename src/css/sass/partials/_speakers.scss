@@ -16,3 +16,8 @@
 .challange-info{
   padding-top: 0;
 }
+
+.speakers-title{
+  font-size: 1.75em;
+  @include shift(5);
+}
