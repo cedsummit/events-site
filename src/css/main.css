@@ -554,6 +554,17 @@ img {
 .organiser-title {
   color: #65757b; }
 
+.speaker {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+  border-top: 1px solid #e0e0e0;
+  *zoom: 1; }
+  .speaker:before, .speaker:after {
+    content: " ";
+    display: table; }
+  .speaker:after {
+    clear: both; }
+
 .speaker-img, .challange-img {
   display: block;
   float: left;
@@ -569,7 +580,8 @@ img {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 57.35098%; }
+  width: 57.35098%;
+  padding-top: 2.8125em; }
   .speaker-info:last-child {
     margin-right: 0; }
 
@@ -584,6 +596,17 @@ img {
 .speakers-title {
   font-size: 1.75em;
   margin-left: 42.64902%; }
+
+.speaker-img {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 8.5298%;
+  display: block;
+  border-radius: 50%; }
+  .speaker-img:last-child {
+    margin-right: 0; }
 
 #sponsors {
   background-color: #eee; }
