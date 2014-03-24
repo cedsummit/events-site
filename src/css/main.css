@@ -213,7 +213,11 @@
 .speaker-twitter {
   margin: 0;
   color: #d6992b;
-  font-weight: 600; }
+  font-weight: 600;
+  text-decoration: none; }
+
+.speaker-twitter:hover {
+  color: #ad7b21; }
 
 .label {
   color: #A29F9F;
@@ -595,7 +599,8 @@ img {
 
 .speakers-title {
   font-size: 1.75em;
-  margin-left: 42.64902%; }
+  margin-left: 42.64902%;
+  margin-top: 4.0625em; }
 
 .speaker-img {
   display: block;
@@ -603,6 +608,7 @@ img {
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-left: 8.5298%;
+  text-align: center;
   display: block;
   border-radius: 50%; }
   .speaker-img:last-child {

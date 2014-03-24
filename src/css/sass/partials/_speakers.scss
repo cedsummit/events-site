@@ -24,11 +24,13 @@
 .speakers-title{
   font-size: 1.75em;
   @include shift(5);
+  margin-top: em(65);
 }
 
 .speaker-img{
   @include span-columns(3);
   @include shift(1);
+  text-align: center;
   display: block;
   border-radius:50%;
 }

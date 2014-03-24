@@ -32,6 +32,11 @@
   margin: 0;
   color: $secondary-color;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.speaker-twitter:hover{
+  color: darken($secondary-color, 10%);
 }
 
 .label{
