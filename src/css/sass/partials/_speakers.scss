@@ -1,7 +1,6 @@
 .speaker{
   padding-top: em(50);
   padding-bottom: em(50);
-  border-top: 1px solid $border-color;
   @include clearfix;
 }
 
