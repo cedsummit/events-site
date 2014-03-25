@@ -34,3 +34,7 @@
   display: block;
   border-radius:50%;
 }
+
+.more{
+  @include shift(5);
+}
