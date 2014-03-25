@@ -28,8 +28,8 @@
 }
 
 .speaker-img{
-  @include span-columns(3);
-  @include shift(1);
+  @include span-columns(2);
+  @include shift(2);
   text-align: center;
   display: block;
   border-radius:50%;
