@@ -87,7 +87,7 @@
           <p>
           A series of events for HR and training professionals, technologists and entrepreneurs seeking innovation in workforce skills development.<br><br>
 
-          <i class="fa fa-file-o"></i><a href="pdf/crossover-media-pack.pdf" class="pdf-link" target="_blank">Download Media Pack &amp; Programme</a>
+          <i class="fa fa-file-o"></i><a href="pdf/cedsummit-media-pack.pdf" class="pdf-link" target="_blank">Download Media Pack &amp; Programme</a>
           </p>
         </div>
       </div>
@@ -124,7 +124,7 @@
           <p class="event-discription">
             Followed by a wine and cheese reception and joint social evening with BIMA ThirstDay Edinburgh.
           </p>
-          <a href="https://www.eventjoy.com/e/crossover-edinburgh-conference-219927" class="cta" target="_blank">Register now</a>
+          <a href="https://www.eventjoy.com/e/crossover-edinburgh-conference-219927" onClick="conferenceAnalytics()" class="cta" target="_blank">Register now</a>
         </div>
       </div>
     </div>
@@ -396,13 +396,20 @@
 
   <!-- google analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24889671-5']);
+    _gaq.push(['_trackPageview']);
 
-    ga('create', 'UA-24889671-5', 'crossoveredinburgh.com');
-    ga('send', 'pageview');
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    function conferenceAnalytics(){
+      _gaq.push(['_trackEvent', 'Registrations', 'ClickThrough', 'Conference']);
+    }
+
   </script>
 </body>
 </html>
