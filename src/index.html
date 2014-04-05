@@ -417,6 +417,25 @@
   </footer>
   <p class="copyright">Copyright &copy; 2014, <span>Insight Arcade Ltd</span>, Company No. SC423555, 3 Ponton St, Edinburgh, EH3 9QQ</p>
 
+  <!-- scripts -->
+  <script src="components/handlebars/handlebars.min.js"></script>
+  <script src="components/contentful/dist/contentful.min.js"></script>
+
+  <!-- templates -->
+  <script id="speakers-template" type="text/x-handlebars-template">
+  <div class="speaker">
+    <img class="speaker-img" src="{{headshot.fields.file.url}}" alt="Simon Grant" />
+    <div class="speaker-info">
+      <h3 class="speaker-name">{{name}}</h3>
+      <p class="speaker-desc">{{title}}, {{organisation}}</p>
+
+      <p class="speaker-desc">{{biography}}</p>
+      <p class="speaker-twitter"><a class="speaker-twitter" href="http://twitter.com/{{twitter}}" target="_blank">Twitter</a> /
+      <a class="speaker-twitter" href="{{linkedIn}}" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+  </script>
 
   <!-- google analytics -->
   <script>
@@ -436,6 +455,7 @@
 
   </script>
 
+  <!-- Heap analytics -->
   <script type="text/javascript">
   var heap=heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";varc=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
   heap.load("1451273747");

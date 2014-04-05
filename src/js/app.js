@@ -1,14 +1,54 @@
 // Page Stuff
 
 $(document).ready(function () {
-  var wHeight = $(window).height(),
-      hHeight = $('#header').height(),
-      aboutHeight = wHeight - hHeight;
 
-  var videoTemplate = '<source src="video/ambient.webm" type="video/webm" />' +
-                      '<source src="video/ambient.ogv" type="video/ogg" />' +
-                      '<source src="video/ambient.mp4" />';
+  // Contentful
+  var client = contentful.createClient({
+    // ID of Space
+    space: '38fezq194ho6',
 
+    // A valid access token within the Space
+    accessToken: '5f0add48f09832c94870f45824657be5a8a57d6e18d34e1f915a61399e7f4ae4',
+
+    // Enable or disable SSL. Enabled by default.
+    secure: true
+  });
+
+  // Get Assets using callback interface
+  client.entries({}, function(err, entries) {
+    if (err) { console.log(err); return; }
+    // Load content into template
+
+    entries.forEach(function (e) {
+      var speaker = e.fields;
+      console.log(speaker);
+      var source = $("#speakers-template").html();
+      var template = Handlebars.compile(source);
+      // $('.speakers').append(template(speaker));
+    });
+
+
+  });
+
+  softScroll();
+  navHighlight();
+  onResize();
+});
+
+$(window).focus(function() {
+  $('#bg-video').get(0).play();
+});
+
+$(window).blur(function() {
+    $('#bg-video').get(0).pause();
+});
+
+$('#bg-video').on('ended', function () {
+    this.get(0).currentTime = 0;
+    this.get(0).play();
+}, false);
+
+function softScroll() {
   $('.nav-menu-item').click(function(e){
       e.preventDefault();
       $('html, body').animate({
@@ -16,7 +56,9 @@ $(document).ready(function () {
       }, 500);
       return false;
   });
+}
 
+function navHighlight() {
   // Cache selectors
   var topMenu = $(".menu"),
       topMenuHeight = topMenu.height()+200,
@@ -34,43 +76,28 @@ $(document).ready(function () {
   $(window).scroll(function(){
      // Get container scroll position
      var fromTop = $(this).scrollTop()+topMenuHeight;
+
      // Get id of current scroll item
      var cur = scrollItems.map(function(){
        if ($(this).offset().top < fromTop)
          return this;
      });
+
      // Get the id of the current element
      cur = cur[cur.length-1];
      var id = cur && cur.length ? cur[0].id : "";
 
-     console.log(id)
      menuItems.removeClass('active');
      $('a[href="#'+ id + '"]').addClass('active');
-     // Set/remove active class
   });
+}
 
-  //Make sure things resize!
+function onResize() {
   $( window ).resize(function() {
-    wHeight = $(window).height(),
-    hHeight = $('header').height(),
-    aboutHeight = wHeight - hHeight;
+    var wHeight = $(window).height();
+    var hHeight = $('header').height();
+    var aboutHeight = wHeight - hHeight;
 
     $('#about').css('height', wHeight + 'px');
   });
-  console.log('Woot');
-});
-
-$(window).focus(function() {
-  console.log('Unpause');
-  $('#bg-video').get(0).play();
-});
-
-$(window).blur(function() {
-    console.log('Pause');
-    $('#bg-video').get(0).pause();
-});
-
-$('#bg-video').on('ended', function () {
-    this.get(0).currentTime = 0;
-    this.get(0).play();
-}, false);
+}
