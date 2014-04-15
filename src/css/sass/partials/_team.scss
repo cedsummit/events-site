@@ -5,13 +5,14 @@
 }
 
 .team-member{
-  width:33%;
+  @include span-columns(3);
+  @include omega(4);
   float: left;
   text-align: center;
   padding: 0 0 60px 0;
   img{
     display:inline-block;
-    width: 40%;
+    width: 60%;
     height:auto;
     border-radius:50%;
   }
