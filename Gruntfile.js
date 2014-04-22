@@ -63,7 +63,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   //dev
-  grunt.registerTask('default', ['sass', 'jshint']);
+  grunt.registerTask('default', ['sass']);
   grunt.registerTask('dev', ['watch']);
 
   //build

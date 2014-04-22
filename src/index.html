@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="css/main.css" />
 
   <!-- Scripts -->
+  <!-- at the top for video loading issues -->
   <script src="components/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
 </head>
@@ -48,9 +49,18 @@
         <img src="img/ced-logo.svg" alt="Logo" />
       </div>
       <nav class="menu">
-          <a class="nav-menu-item" href="#conference"><span class="date-label">June 5</span>Conference</a>
-          <a class="nav-menu-item" href="#exhibition"><span class="date-label">June 6</span>Exhibition</a>
-          <a class="nav-menu-item" href="#product-forge"><span class="date-label">June 6 - 8</span>Product Forge</a>
+          <a class="nav-menu-item" data-label="For HR, L&amp;D and Training professionals" href="#conference">
+            <span class="date-label">June 5</span>
+            Conference
+          </a>
+          <a class="nav-menu-item" data-label="For Training Purchasers &amp; Providers" href="#exhibition">
+            <span class="date-label">June 6</span>
+            Exhibition
+          </a>
+          <a class="nav-menu-item" data-label="For Developers, designers &amp; Entrepreneurs" href="#product-forge">
+            <span class="date-label">June 6 - 8</span>
+            Product Forge
+          </a>
           <a class="nav-menu-item" href="#organisers">Organisers</a>
           <a class="nav-menu-item-external" href="http://blog.crossoveredinburgh.com" target="_blank">Blog</a>
           <a class="nav-menu-item-external" href="http://twitter.com/cedsummit" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -124,7 +134,7 @@
           <p class="event-discription">
             Followed by a wine and cheese reception and joint social evening with BIMA ThirstDay Edinburgh.
           </p>
-          <a href="https://www.eventjoy.com/e/crossover-edinburgh-conference-219927" onClick="conferenceAnalytics()" class="cta" target="_blank">Register now</a>
+          <a href="conference-tickets.html" id="conference-tickets" class="cta" target="_blank">Register now</a>
         </div>
       </div>
     </div>
@@ -437,49 +447,9 @@
   </footer>
   <p class="copyright">Copyright &copy; 2014, <span>Insight Arcade Ltd</span>, Company No. SC423555, 3 Ponton St, Edinburgh, EH3 9QQ</p>
 
-  <!-- scripts -->
-  <script src="components/handlebars/handlebars.min.js"></script>
-  <script src="components/contentful/dist/contentful.min.js"></script>
-
-  <!-- templates -->
-  <script id="speakers-template" type="text/x-handlebars-template">
-  <div class="speaker">
-    <img class="speaker-img" src="{{headshot.fields.file.url}}" alt="Simon Grant" />
-    <div class="speaker-info">
-      <h3 class="speaker-name">{{name}}</h3>
-      <p class="speaker-desc">{{title}}, {{organisation}}</p>
-
-      <p class="speaker-desc">{{biography}}</p>
-      <p class="speaker-twitter">
-        <a class="speaker-twitter" href="http://twitter.com/{{twitter}}" target="_blank">Twitter</a> /
-        <a class="speaker-twitter" href="{{linkedIn}}" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </div>
-  </script>
-
   <!-- google analytics -->
-  <script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-24889671-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-    function conferenceAnalytics(){
-      _gaq.push(['_trackEvent', 'Registrations', 'ClickThrough', 'Conference']);
-    }
-
-  </script>
-
+  <script src="js/ga.js" type="text/javascript"></script>
   <!-- Heap analytics -->
-  <script type="text/javascript">
-  var heap=heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";varc=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
-  heap.load("1451273747");
-  </script>
+  <script src="js/heap.js" type="text/javascript"></script>
 </body>
 </html>
