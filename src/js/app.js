@@ -2,6 +2,17 @@ $(document).ready(function () {
   softScroll();
   navHighlight();
   onResize();
+
+  if($('#event-nav-banner')){
+    $('a[href="#conference"], a[href="#exhibition"], a[href="#product-forge"]').hover(function (e) {
+      $('#event-nav-banner').css('display', 'block');
+      var content = $(this).data('label');
+      $('#event-nav-banner').prepend('<span>' + content + '</span>');
+    }, function (e) {
+      $('#event-nav-banner').css('display', 'none');
+      $('#event-nav-banner span').remove();
+    });
+  }
 });
 
 $(window).focus(function() {

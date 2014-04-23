@@ -1,2 +1,17 @@
+#event-nav-banner{
+  position: fixed;
+  top: 83px;
+  padding:10px;
+  right:0;
+  left: 0;
+  background-color: $secondary-color;
+  color: $primary-color;
+  display: none;
+  z-index:989898;
+}
 
+#event-nav-banner span{
+  padding-left: 100px;
+  padding-right: 20px;
+}
 
