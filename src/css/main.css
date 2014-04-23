@@ -674,7 +674,7 @@ img {
   border-right: none; }
 
 .sponsor img {
-  width: 50%; }
+  width: 100%; }
 
 .sponsor-message {
   padding-top: 120px;
@@ -818,17 +818,17 @@ footer {
 #event-nav-banner {
   position: fixed;
   top: 83px;
-  padding: 10px;
+  padding: 20px;
   right: 0;
   left: 0;
   background-color: #b99a54;
   color: #202527;
   display: none;
-  z-index: 989898; }
+  z-index: 989898;
+  text-align: center; }
 
 #event-nav-banner span {
-  padding-left: 100px;
-  padding-right: 20px; }
+  text-align: center; }
 
 body, html {
   height: 100%; }
